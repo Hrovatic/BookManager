@@ -1,0 +1,239 @@
+:root {
+  --font-ui: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  font-family: var(--font-ui);
+}
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--bg) !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.disabled-link {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+:root {
+color-scheme: dark;
+
+  --bg: #0b1020;
+  --text: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.059);
+  --card-border: rgba(255, 255, 255, 0.12);
+  --muted: rgba(255, 255, 255, 0.70);
+  --btn: #ffffff;
+  --btn-bg: #0b1020;
+  --btn-text: #0b1020;
+  --nav-btn-bg: #ffffff;
+  --nav-btn-text: #1a1a1a;
+  --nav-item-bg: rgba(255, 255, 255, 0.04);
+  --nav-item-hover: rgba(255, 255, 255, 0.06);
+  --nav-item-active: rgba(124, 92, 255, 0.14);
+  --nav-item-active-border: rgba(124, 92, 255, 0.45);
+  --user-btn-bg: rgba(255, 255, 255, 0.10);
+  --user-btn-border: rgba(255, 255, 255, 0.12);
+  --page-subtitle: rgba(255, 255, 255, 0.70);
+  --status-green-bg: rgba(34, 197, 94, 0.14);
+  --status-green-border: rgba(34, 197, 94, 0.38);
+  --status-green-text: #bbf7d0;
+  --status-green-pill-text: #34d399;
+  --status-yellow-bg: rgba(245, 158, 11, 0.14);
+  --status-yellow-border: rgba(245, 158, 11, 0.42);
+  --status-yellow-text: #fde68a;
+  --status-yellow-pill-text: #fbbf24;
+  --status-red-bg: rgba(239, 68, 68, 0.14);
+  --status-red-border: rgba(239, 68, 68, 0.42);
+  --status-red-text: #fecaca;
+  --status-red-pill-text: #fca5a5;
+  --status-info-bg: rgba(59, 130, 246, 0.16);
+  --status-info-border: rgba(59, 130, 246, 0.42);
+  --status-info-text: #bfdbfe;
+  --card-bg-gradient1: rgba(30,34,56,0.92);
+  --card-bg-gradient2: rgba(21,25,46,0.92);
+  --btn-gradient1:#7c5cff;
+  --btn-gradient2:#5b3ee4;
+  --on-accent: #ffffff;
+  --modal-bg: rgba(18, 22, 40, 1);
+  --modal-overlay: rgba(0, 0, 0, 0.45);
+  --shadow-elev-1: 0 14px 30px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.05);
+  --shadow-elev-2: 0 20px 45px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
+  --shadow-elev-3: 0 28px 70px rgba(0,0,0,0.55);
+  --focus-ring: rgba(124, 92, 255, 0.18);
+  --section-accent: #7c5cff;
+  --surface-radius: 16px;
+  --select-bg: rgba(255, 255, 255, 0.078);
+  --select-text: #ffffff;   /* dark mode */
+  --option-bg: #141414;     /* dark mode dropdown */
+  --option-text: #ffffff;
+  --select-arrow: rgba(255,255,255,0.65);
+  --issn-meta-value: #c7d2fe;
+  --table-head-bg: #1a1e2d;
+
+}
+
+/* Light mode */
+.light {
+  color-scheme: light;
+
+  --bg: #f4f6f8;
+  --text: #1a1a1a;
+  --card-bg: #ffffff;
+  --card-text: #1a1a1a;
+  --card-border: rgba(0, 0, 0, 0.08);
+  --muted: #555;
+  --btn: #1a1a1a;
+  --btn-bg: #ffffff;
+  --btn-text: #ffffff;
+  --nav-btn-bg: #1a1a1a;
+  --nav-btn-text: #ffffff;
+  --nav-item-bg: #f0f0f0;
+  --nav-item-hover: #e0e0e0;
+  --nav-item-active: #d0d0ff;
+  --nav-item-active-border: #7c5cff;
+  --nav-item-active-hover: #dcdcdc;
+  --user-btn-bg: rgba(0, 0, 0, 0.35);
+  --user-btn-border: rgba(0, 0, 0, 0.10);
+  --page-subtitle: #1a1a1a;
+  --status-green-bg: rgba(22, 101, 52, 0.16);
+  --status-green-border: rgba(22, 101, 52, 0.45);
+  --status-green-text: #166534;
+  --status-green-pill-text: #166534;
+  --status-yellow-bg: rgba(161, 98, 7, 0.18);
+  --status-yellow-border: rgba(161, 98, 7, 0.45);
+  --status-yellow-text: #a16207;
+  --status-yellow-pill-text: #a16207;
+  --status-red-bg: rgba(185, 28, 28, 0.16);
+  --status-red-border: rgba(185, 28, 28, 0.45);
+  --status-red-text: #b91c1c;
+  --status-red-pill-text: #b91c1c;
+  --status-info-bg: rgba(29, 78, 216, 0.16);
+  --status-info-border: rgba(29, 78, 216, 0.42);
+  --status-info-text: #1d4ed8;
+  --card-bg-gradient1:rgba(99, 102, 241, 0.12);
+  --card-bg-gradient2:rgba(139, 92, 246, 0.08);
+  --btn-gradient1:rgba(99, 102, 241, 0.65);
+  --btn-gradient2:rgba(139, 92, 246, 0.55);
+  --on-accent: #ffffff;
+  --modal-bg: rgba(255, 255, 255, 1);
+  --modal-overlay: rgba(0, 0, 0, 0.45);
+  --shadow-elev-1: 0 14px 30px rgba(15, 23, 42, 0.12);
+  --shadow-elev-2: 0 20px 45px rgba(15, 23, 42, 0.16);
+  --shadow-elev-3: 0 28px 70px rgba(15, 23, 42, 0.22);
+  --focus-ring: rgba(124, 92, 255, 0.18);
+  --section-accent: #7c5cff;
+  --surface-radius: 16px;
+  --select-bg: rgba(255, 255, 255, 1);
+  --select-text: #1a1a1a;   /* light mode */
+  --option-bg: #ffffff;
+  --option-text: #1a1a1a;
+  --select-arrow: rgba(0, 0, 0, 0.65);
+  --issn-meta-value: #6382ff;
+  --table-head-bg: #ffffff;
+}
+
+select{
+  color-scheme: inherit;
+}
+
+:where(button, input, select, textarea, .btn):focus-visible {
+  outline: none;
+  border-color: var(--nav-item-active-border);
+  box-shadow: 0 0 0 4px var(--focus-ring);
+}
+
+.section-title {
+  position: relative;
+  padding-left: 12px;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 4px;
+  height: 16px;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  background: var(--section-accent);
+}
+
+.surface {
+  border-radius: var(--surface-radius);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-elev-1);
+}
+
+.surface-2 {
+  box-shadow: var(--shadow-elev-2);
+}
+
+.surface-3 {
+  box-shadow: var(--shadow-elev-3);
+}
+
+.row-hover {
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.row-hover:hover {
+  border-color: var(--nav-item-active-border);
+  box-shadow: var(--shadow-elev-2);
+}
+
+.empty-state {
+  padding: 16px;
+  border-radius: var(--surface-radius);
+  border: 1px dashed var(--card-border);
+  background: var(--card-bg);
+  color: var(--muted);
+  text-align: center;
+  font-size: 13px;
+  display: grid;
+  place-items: center;
+  gap: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  ::view-transition-group(root),
+  ::view-transition-image-pair(root),
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+}
+
+/* Theme switch View Transition */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+

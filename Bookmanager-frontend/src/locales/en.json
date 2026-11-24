@@ -1,0 +1,844 @@
+{
+  "brand": "Rudolfovo Library",
+  "user": {
+    "admin": "Admin"
+  },
+  "nav": {
+    "title": "Navigation",
+    "home": "Home",
+    "add": "Add books",
+    "addBook": "Add book",
+    "addUser": "Add user",
+    "manageUsers": "Manage users",
+    "auditLogs": "Audit Logs",
+    "books": "All Books",
+    "borrowed": "My Borrowings",
+    "wishlist": "Wishlist",
+    "inventory": "Inventory",
+    "priceReview": "Price review",
+    "changePassword": "Change Password",
+    "logout": "Logout",
+    "language": "Language",
+    "theme": "Theme",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "profile": "Profile",
+    "statistics": "Statistics",
+    "userActions": "User actions",
+    "adminActions": "Admin actions",
+    "manageCenters": "Manage centers"
+  },
+  "home": {
+    "title": "Home",
+    "subtitle": "Quick overview and shortcuts",
+    "scan": {
+      "title": "Scan ISBN",
+      "text": "Add a book via barcode",
+      "button": "Scan",
+      "explanation": "This function is only available to the admin."
+    },
+    "search": {
+      "title": "Search",
+      "text": "Find books by title/keywords.",
+      "button": "Search"
+    },
+    "borrow": {
+      "title": "My Borrowings",
+      "text": "View your borrowed books.",
+      "button": "Open"
+    },
+    "activity": {
+      "title": "Recent Activity",
+      "none": "This is where your recent browsing will be shown."
+    }
+  },
+  "wishlist": {
+    "title": "Book Requests",
+    "subtitle": "Employees can suggest books to purchase and add to the inventory.",
+    "tabs": {
+      "mine": "Mine",
+      "allAdmin": "All (admin)"
+    },
+    "form": {
+      "title": "Suggest a Book",
+      "isbn": "ISBN / ISSN (optional)",
+      "isbnPlaceholder": "978... or 0378-5955",
+      "isbnAutoSearchHint": "Auto-search runs on ISBN-13; for ISBN-10 and ISSN press Enter or leave the field.",
+      "lookupSearching": "Searching...",
+      "lookupSuccess": "Book found.",
+      "lookupNotFound": "Book not found. Enter details manually.",
+      "priority": "Priority",
+      "price": "Price (optional)",
+      "pricePlaceholder": "e.g. 24.99",
+      "funding": "Funding source",
+      "fundingPlaceholder": "e.g. Project name",
+      "center": "Center *",
+      "centerPlaceholder": "Choose center",
+      "bookTitle": "Title *",
+      "bookTitlePlaceholder": "Book title",
+      "author": "Author(s) *",
+      "authorPlaceholder": "Author",
+      "language": "Language",
+      "languagePlaceholder": "ENG / SLO",
+      "issnMeta": "ISSN details:",
+      "issnEdit": "Edit ISSN",
+      "issnModalTitle": "ISSN details",
+      "issnModalSubtitle": "Add volume and issue number for serial publications.",
+      "issnVolumeLabel": "Volume",
+      "issnVolumePlaceholder": "e.g. 12",
+      "issnNumberLabel": "Issue number",
+      "issnNumberPlaceholder": "e.g. 3",
+      "issnModalCancel": "Cancel",
+      "issnModalSave": "Save",
+      "genres": "Genres (comma separated)",
+      "genresPlaceholder": "Fantasy, Fiction",
+      "note": "Note (why, edition, link…)",
+      "notePlaceholder": "Recommended edition, bookstore link, reason...",
+      "save": "Save",
+      "cancel": "Cancel",
+      "notify": "Notify me when the book is added to inventory",
+      "submit": "Submit Request",
+      "submitting": "Submitting...",
+      "clear": "Clear"
+    },
+    "priority": {
+      "low": "Low",
+      "normal": "Normal",
+      "high": "High"
+    },
+    "search": "Search...",
+    "status": {
+      "all": "All statuses",
+      "new": "New",
+      "review": "In review",
+      "ordered": "Ordered",
+      "added": "Added to inventory",
+      "rejected": "Rejected"
+    },
+    "added": "Added:",
+    "author": "Author",
+    "price": "Price",
+    "note": "Note",
+    "success": {
+      "created": "Request was added successfully.",
+      "updated": "Request was updated successfully."
+    },
+    "edit": "Edit",
+    "delete": "Delete",
+    "empty": "No purchase suggestions."
+  },
+  "isbn": {
+    "title": "ISBN or ISSN Search",
+    "placeholder": "Scan or enter ISBN",
+    "submit": "Submit",
+    "status": {
+      "idle": "Waiting...",
+      "searching": "Searching...",
+      "fetching": "Fetching data...",
+      "found": "Book found 😎",
+      "notfound": "ISBN not found.",
+      "error": "An error occurred."
+    },
+    "results": "Results",
+    "titleLabel": "Title",
+    "author": "Author(s)",
+    "language": "Language",
+    "publisher": "Publisher",
+    "year": "Year published",
+    "genres": "Genres",
+    "noResults": "No results.",
+    "adminNote": "You have priority because you are an admin. 😊",
+    "actions": "Actions:",
+    "addToInventory": "Add to inventory",
+    "borrow": "Borrow",
+    "addToWishlist": "Add to wishlist"
+  },
+  "borrowings": {
+    "title": "Borrowings",
+    "subtitle": "Overview of borrowed books with search and filters",
+    "searchLabel": "Search field:",
+    "searchPlaceholder": "Enter book title or user",
+    "active": "Active",
+    "overdue": "Overdue",
+    "returned": "Returned",
+    "borrowed": "Borrowed",
+    "tabs": {
+      "my": "My borrowings",
+      "all": "All borrowings"
+    },
+    "success": {
+      "returned": "Chosen books have been returned.",
+      "extended": "Due date of selected books has been increased.",
+      "deleted": "Selected borrowings were deleted."
+    },
+    "filters": {
+      "allStatuses": "All statuses",
+      "allTime": "All time",
+      "last7": "Last 7 days",
+      "last30": "Last 30 days",
+      "thisMonth": "This month",
+      "custom": "Custom range",
+      "period": "Period"
+    },
+    "sort": {
+      "newest": "Newest",
+      "oldest": "Oldest",
+      "nameAsc": "By name (A–Z)",
+      "nameDesc": "By name (Z–A)"
+    },
+    "table": {
+      "book": "Book",
+      "user": "User",
+      "borrowedAt": "Borrowed at",
+      "dueDate": "Due date",
+      "status": "Status"
+    },
+    "status": {
+      "active": "Active",
+      "overdue": "Overdue",
+      "returned": "Returned",
+      "borrowed": "Borrowed"
+    },
+    "actions": {
+      "return": "Return",
+      "extend": "Extend",
+      "delete": "Delete"
+    },
+    "selected": "Selected:",
+    "results": "{count} results",
+    "empty": "No borrowings match the current filters.",
+    "pagination": {
+      "prev": "Back",
+      "next": "Next",
+      "page": "Page",
+      "perPage": "{count} / page"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "subtitle": "Sign in to the library",
+    "username": "Username",
+    "usernamePlaceholder": "e.g. john.doe",
+    "password": "Password",
+    "passwordPlaceholder": "",
+    "submit": "Login",
+    "noAccount": "Don't have an account?",
+    "register": "Register",
+    "errors": {
+      "invalid": "Incorrect username or password",
+      "network": "Connection error. Please try again."
+    }
+  },
+  "register": {
+    "title": "Create Account",
+    "subtitle": "Create an account to access the library",
+    "username": "Username",
+    "usernamePlaceholder": "e.g. john.doe",
+    "email": "Email",
+    "emailPlaceholder": "Enter email",
+    "centerLegend": "Legend:",
+    "center": "Center",
+    "centerPlaceholder": "-- choose center --",
+    "password": "Password",
+    "passwordPlaceholder": "Enter password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Repeat password",
+    "submit": "Register",
+    "errors": {
+      "required": "All fields are required",
+      "passwordMismatch": "Passwords do not match",
+      "exists": "User already exists",
+      "createFailed": "Failed to create user"
+    },
+    "success": {
+      "created": "User created successfully!"
+    }
+  },
+  "signup": {
+    "title": "Employee Signup",
+    "subtitle": "Create your library account from the invite QR link",
+    "username": "Username",
+    "usernamePlaceholder": "e.g. john.doe",
+    "email": "Email",
+    "emailPlaceholder": "Enter email",
+    "center": "Center",
+    "centerPlaceholder": "-- choose center --",
+    "centers": {
+      "cent": "CENT",
+      "cedig": "CEDIG",
+      "cekrog": "CEKROG",
+      "cetip": "CETIP",
+      "ceq": "CEQ",
+      "sharedServices": "Shared services"
+    },
+    "password": "Password",
+    "passwordPlaceholder": "Enter password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Repeat password",
+    "submit": "Create Account",
+    "submitting": "Submitting...",
+    "errors": {
+      "required": "All fields are required",
+      "passwordMismatch": "Passwords do not match",
+      "createFailed": "Failed to create account"
+    },
+    "success": {
+      "created": "Account created. Redirecting to login..."
+    }
+  },
+  "changePassword": {
+    "title": "Change Password",
+    "subtitle": "Update your account password.",
+    "currentPassword": "Current password",
+    "newPassword": "New password",
+    "confirmPassword": "Confirm new password",
+    "submit": "Save Password",
+    "saving": "Saving...",
+    "errors": {
+      "required": "All fields are required.",
+      "mismatch": "New password and confirmation do not match.",
+      "minLength": "Password must contain at least 8 characters.",
+      "updateFailed": "Failed to update password."
+    },
+    "success": {
+      "updated": "Password successfully updated."
+    }
+  },
+  "books": {
+    "title": "All Books",
+    "subtitle": "Overview of all books in the library",
+    "addBook": "Add Book",
+    "searchPlaceholder": "Search by title, author, or ISBN",
+    "allGenres": "All genres",
+    "allCenters": "All centers",
+    "allCategories": "All categories",
+    "allLanguages": "All languages",
+    "availabilityFilter": {
+      "all": "All availability",
+      "availableOnly": "Available only",
+      "borrowedOnly": "Borrowed only"
+    },
+    "pageSizeOption": "{size} / page",
+    "categoryNames": {
+      "1_00_00": "Natural Sciences",
+      "2_00_00": "Technology",
+      "4_00_00": "Biotechnology",
+      "5_00_00": "Social Sciences",
+      "6_00_00": "Humanities",
+      "7_00_00": "Interdisciplinary Research",
+      "10_00_00": "Serial Publications",
+      "9_00_00": "Other"
+    },
+    "orderedNotAvailable": "Ordered",
+    "loading": "Loading books…",
+    "error": "Error",
+    "available": "Available",
+    "unavailable": "Borrowed",
+    "view": "View",
+    "borrow": "Borrow",
+    "notAvailableTooltip": "Book is not available",
+    "borrowTooltip": "Borrow book",
+    "noBooks": "No books to display.",
+    "borrowModal": {
+      "title": "Borrow Book",
+      "forSelf": "Borrow for me",
+      "forUser": "Borrow for user",
+      "searchUsersPlaceholder": "Search by username, email, or center",
+      "selectUser": "-- select user --",
+      "loadingUsers": "Loading users...",
+      "noUsers": "No users to show.",
+      "cancel": "Cancel",
+      "confirm": "Confirm borrow"
+    },
+    "messages": {
+      "noCopies": "No copies are available.",
+      "borrowError": "Error while borrowing book.",
+      "missingUserId": "Missing userId (login)."
+    },
+    "success": {
+      "borrowed": "Book \"{title}\" was borrowed successfully.",
+      "borrowedForUser": "Book \"{title}\" was borrowed successfully for user {username}."
+    }
+  },
+  "addbook": {
+    "title": "Add a New Book",
+    "isbnNotFound": "A book with this ISBN does not exist. Enter the details below.",
+    "success": "The book was successfully added",
+    "isbn": "ISBN:",
+    "isbnPlaceholder": "ISBN or ISSN",
+    "titleLabel": "Title:",
+    "titlePlaceholder": "Book title",
+    "author": "Author(s):",
+    "authorPlaceholder": "e.g. J.R.R. Tolkien",
+    "publisher": "Publisher:",
+    "year": "Year published:",
+    "price": "Price (EUR):",
+    "pricePlaceholder": "e.g. 24.99",
+    "coverUpload": "Cover image (upload):",
+    "coverUploadHint": "JPG/PNG/WEBP, max 10 MB",
+    "coverUrl": "Cover image URL:",
+    "coverUrlPlaceholder": "https://example.com/cover.jpg",
+    "language": "Language:",
+    "languagePlaceholder": "ENG",
+    "location": "Location:",
+    "subcategory": "Subcategory:",
+    "subcategoryPlaceholder": "-- choose subcategory --",
+    "genres": "Genres:",
+    "genresPlaceholder": "Fantasy, Fiction",
+    "issnMeta": "ISSN details:",
+    "issnEdit": "Edit ISSN",
+    "issnModalTitle": "ISSN details",
+    "issnModalSubtitle": "Add volume and issue number for serial publications.",
+    "issnVolumeLabel": "Volume",
+    "issnVolumePlaceholder": "e.g. 12",
+    "issnNumberLabel": "Issue number",
+    "issnNumberPlaceholder": "e.g. 3",
+    "issnModalCancel": "Cancel",
+    "issnModalSave": "Save",
+    "scanLookup": "Add via ISBN scan",
+    "save": "Save book",
+    "cancel": "Reset"
+  },
+  "statistics": {
+    "title": "Library Statistics",
+    "current": "Current",
+    "booksLabel": "books",
+    "progress": {
+      "goalReached": "Goal reached",
+      "toGoal": "{count} to goal",
+      "done": "3500 reached. Time for a new shelf.",
+      "opening": "We're just opening boxes...",
+      "filling": "The shelf is filling up nicely.",
+      "space": "The librarian is already looking for more space.",
+      "almost": "We'll soon need a whole new floor."
+    },
+    "centers": {
+      "title": "Books by center",
+      "summaryTitle": "Total copies",
+      "summaryNote": "Sum of all copies across centers"
+    },
+    "topSubcategories": {
+      "title": "Top 10 subcategories by new copies",
+      "note": "Year/range filters apply the same as for time-based charts.",
+      "metaTotalTop10": "Total in top 10",
+      "metaCount": "Subcategories",
+      "xAxisTitle": "No. of new copies",
+      "tooltipSuffix": "new copies",
+      "series": {
+        "addedCopies": "Added copies"
+      }
+    },
+    "growth": {
+      "title": "Copy growth over time",
+      "yearAll": "All years",
+      "range90d": "Last 90 days",
+      "range12m": "Last 12 months",
+      "range24m": "Last 24 months",
+      "rangeAll": "All",
+      "bucketMonth": "By month",
+      "bucketDay": "By day",
+      "refresh": "Refresh",
+      "loading": "Loading...",
+      "metaTotalNow": "Current total",
+      "metaAddedRange": "Added in shown range",
+      "series": {
+        "total": "Total",
+        "added": "Added"
+      },
+      "yaxis": {
+        "total": "Total",
+        "added": "Added"
+      }
+    },
+    "growthPercent": {
+      "title": "Copy growth over time (%)",
+      "note": "Same trend as \"Added\", shown as a percentage of total state in range.",
+      "metaLastPeriod": "Last period",
+      "metaTotalNow": "Current total",
+      "series": {
+        "addedPercent": "Added (%)"
+      },
+      "yaxis": {
+        "addedPercent": "Added (%)"
+      }
+    },
+    "errors": {
+      "growthLoad": "Error loading chart.",
+      "subcategoriesLoad": "Error loading subcategories."
+    }
+  },
+  "adminCenters": {
+    "title": "Manage centers",
+    "subtitle": "Manage centers, users, and shared costs.",
+    "loading": "Loading centers...",
+    "empty": "No centers found.",
+    "newCenterPlaceholder": "Enter new center name",
+    "currency": "{value} EUR",
+    "actions": {
+      "refresh": "Refresh",
+      "addCenter": "Add center",
+      "save": "Save",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "columns": {
+      "id": "ID",
+      "center": "Center",
+      "users": "Users",
+      "booksCopies": "Books and copies",
+      "price": "Price",
+      "actions": "Actions"
+    },
+    "confirm": {
+      "deletePrompt": "Do you want to delete center \"{name}\"?",
+      "updatePrompt": "Changing this center will update {users} users and {books} books. Continue?"
+    },
+    "errors": {
+      "loadFailed": "Failed to load centers.",
+      "enterName": "Enter a center name.",
+      "createFailed": "Failed to create center.",
+      "nameEmpty": "Center name cannot be empty.",
+      "notFound": "Center not found.",
+      "nameSame": "The new name is the same as the current one.",
+      "updateFailed": "Failed to update center.",
+      "deleteFailed": "Failed to delete center."
+    },
+    "success": {
+      "created": "Center \"{name}\" was created successfully.",
+      "updated": "Center was updated successfully.",
+      "deleted": "Center \"{name}\" was deleted successfully."
+    }
+  },
+  "adminUsers": {
+    "title": "Manage users",
+    "subtitle": "View and manage user accounts.",
+    "loading": "Loading users...",
+    "empty": "No users found.",
+    "defaultUserRole": "User",
+    "cannotDeleteSelf": "You cannot delete your own account.",
+    "actions": {
+      "refresh": "Refresh",
+      "changePassword": "Change password",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "savePassword": "Save password",
+      "saving": "Saving..."
+    },
+    "columns": {
+      "id": "ID",
+      "username": "Username",
+      "email": "Email",
+      "role": "Role",
+      "center": "Center",
+      "actions": "Actions"
+    },
+    "modal": {
+      "title": "Change password",
+      "user": "User",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password"
+    },
+    "confirm": {
+      "delete": "Do you want to delete user \"{username}\"?"
+    },
+    "errors": {
+      "loadFailed": "Failed to load users.",
+      "bothPasswords": "Fill in both password fields.",
+      "passwordMismatch": "Passwords do not match.",
+      "passwordMin": "Password must be at least 6 characters long.",
+      "updateFailed": "Failed to update password.",
+      "deleteFailed": "Failed to delete user."
+    },
+    "success": {
+      "passwordUpdated": "Password for \"{username}\" was updated successfully.",
+      "deleted": "User \"{username}\" was deleted successfully."
+    }
+  },
+  "editBook": {
+    "title": "Edit book",
+    "subtitle": "Update book details and category.",
+    "loading": "Loading data...",
+    "fields": {
+      "title": "Title",
+      "author": "Author",
+      "publisher": "Publisher",
+      "year": "Year",
+      "price": "Price",
+      "coverUpload": "Cover",
+      "coverHint": "Select a new image if you want to replace the current cover.",
+      "coverPreviewAlt": "Cover preview",
+      "language": "Language",
+      "categoryMain": "Main category",
+      "subcategory": "Subcategory",
+      "subcategoryPlaceholder": "Select subcategory",
+      "subOptionsCount": "Subcategory options: {count}",
+      "genres": "Genres",
+      "genresPlaceholder": "Genres, separated by comma"
+    },
+    "actions": {
+      "save": "Save",
+      "cancel": "Cancel"
+    },
+    "success": {
+      "updated": "Book updated successfully.",
+      "updatedCoverFailed": "Book updated, but cover upload failed."
+    },
+    "errors": {
+      "loadFailed": "Failed to load book.",
+      "missingToken": "Missing authentication token.",
+      "invalidPrice": "Price must be a valid number.",
+      "saveFailed": "Save failed.",
+      "saveFailedWithReason": "Save failed: {reason}"
+    }
+  },
+  "inventory": {
+    "title": "Inventory",
+    "subtitle": "Overview of all copies (inventory units).",
+    "loading": "Loading inventory...",
+    "empty": "No results for current filters.",
+    "total": {
+      "all": "Total: {total}",
+      "filtered": "Filtered: {filtered} / {total}"
+    },
+    "common": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "actions": {
+      "refresh": "Refresh",
+      "edit": "Edit",
+      "close": "Close",
+      "deleteCopy": "Delete copy",
+      "save": "Save",
+      "saving": "Saving..."
+    },
+    "filters": {
+      "search": "Search",
+      "searchPlaceholder": "Inventory no., title, author, ISBN...",
+      "availability": "Availability",
+      "availabilityAll": "All",
+      "availabilityOnlyAvailable": "Only available",
+      "availabilityOnlyBorrowed": "Only borrowed",
+      "location": "Location",
+      "locationPlaceholder": "e.g. Shelf A3",
+      "sort": "Sort"
+    },
+    "sort": {
+      "invAsc": "Inventory ↑",
+      "invDesc": "Inventory ↓",
+      "titleAsc": "Title ↑",
+      "titleDesc": "Title ↓",
+      "availableFirst": "Available first",
+      "borrowedFirst": "Borrowed first"
+    },
+    "chips": {
+      "availability": "Availability",
+      "location": "Location",
+      "search": "Search"
+    },
+    "aria": {
+      "clearAvailability": "Clear availability filter",
+      "clearLocation": "Clear location filter",
+      "clearSearch": "Clear search filter"
+    },
+    "table": {
+      "inventoryNumber": "Inventory",
+      "book": "Book",
+      "volume": "Volume",
+      "issue": "Issue",
+      "order": "Order",
+      "location": "Location",
+      "condition": "Condition",
+      "status": "Status",
+      "idPrefix": "ID",
+      "unknownBook": "Unknown title",
+      "unknownAuthor": "Unknown author",
+      "borrowedCenter": "Center: {center}",
+      "borrowedByLabel": "Borrowed by"
+    },
+    "status": {
+      "available": "Available",
+      "borrowed": "Borrowed"
+    },
+    "pagination": {
+      "prev": "Previous page",
+      "next": "Next page",
+      "page": "Page {page} / {totalPages}",
+      "perPage": "{count} / page"
+    },
+    "modal": {
+      "title": "Edit copy",
+      "inventoryNumber": "Inventory number",
+      "inventoryNumberPlaceholder": "e.g. 000123"
+    },
+    "confirm": {
+      "deleteCopy": "Delete copy ({label})?\n\nThis action cannot be undone."
+    },
+    "success": {
+      "copyDeleted": "Copy ({label}) was deleted successfully.",
+      "copyDeletedAndBookRemoved": "Copy ({label}) was deleted. The book was removed because there are no copies left."
+    },
+    "errors": {
+      "loadFailed": "Failed to load inventory.",
+      "saveFailed": "Saving failed.",
+      "deleteFailed": "Delete failed."
+    }
+  },
+  "priceReview": {
+    "title": "Price review",
+    "subtitle": "Cost overview by centers",
+    "loading": "Loading...",
+    "currency": "EUR",
+    "actions": {
+      "refresh": "Refresh",
+      "exportExcel": "Export Excel",
+      "resetPrices": "Reset prices"
+    },
+    "table": {
+      "center": "Center",
+      "users": "Users",
+      "price": "Price",
+      "total": "Total"
+    },
+    "history": {
+      "title": "Price history",
+      "subtitle": "Price overview by year (wishlist + added to inventory)"
+    },
+    "filters": {
+      "allYears": "All years",
+      "yearSort": "Year: {order}",
+      "newest": "newest",
+      "oldest": "oldest"
+    },
+    "summary": {
+      "year": "Year",
+      "items": "Items",
+      "total": "Total"
+    },
+    "historyTable": {
+      "year": "Year",
+      "title": "Title",
+      "order": "Order",
+      "author": "Author",
+      "price": "Price",
+      "user": "User",
+      "source": "Source",
+      "reviewedBy": "Reviewed by",
+      "recordedAt": "Recorded at",
+      "empty": "No data."
+    },
+    "source": {
+      "wishlist": "Wishlist",
+      "isbn": "ISBN entry",
+      "manual": "Manually added",
+      "edited": "Updated"
+    },
+    "confirm": {
+      "resetPrices": "Do you really want to reset all prices to 0 EUR?\n\nThis action cannot be undone."
+    },
+    "success": {
+      "pricesReset": "All prices were reset."
+    },
+    "errors": {
+      "loadPrices": "Failed to load prices.",
+      "loadHistory": "Failed to load history.",
+      "resetFailed": "Price reset failed.",
+      "exportFailed": "Export failed."
+    }
+  },
+  "bookdetails": {
+    "loading": "Loading…",
+    "error": "An error occurred",
+    "back": "Back",
+    "status": {
+      "available": "Available",
+      "borrowed": "Borrowed",
+      "unavailable": "Unavailable",
+      "label": "Status:",
+      "available_long": "Available for borrowing",
+      "borrowed_long": "Borrowed —",
+      "borrowed_due": "expected return date:",
+      "borrowed_unknown": "return date: unknown",
+      "unavailable_long": "Currently unavailable (processing / lost / removed)"
+    },
+    "actions": {
+      "borrow": "Borrow",
+      "notify": "Notify me when returned",
+      "edit": "Edit book",
+      "delete": "Delete book",
+      "delete_confirm": "Do you want to delete this book? This action cannot be undone.",
+      "delete_success": "Book deleted successfully.",
+      "delete_error": "Book deletion failed."
+    },
+    "cover": {
+      "zoom_label": "Enlarge cover",
+      "zoom_hint": "Click to enlarge",
+      "zoom_close": "Close",
+      "zoom_alt": "Enlarged cover:"
+    },
+    "inventory": {
+      "title": "Inventory",
+      "number": "Inventory no.",
+      "location": "Category Code",
+      "copies": "Copies",
+      "free": "Available copies",
+      "condition": "Condition",
+      "note": "Note"
+    },
+    "details": {
+      "title": "Details",
+      "label_title": "Title",
+      "label_author": "Author",
+      "label_isbn": "ISBN",
+      "label_issn_number": "Number",
+      "label_issn_issue": "Issue",
+      "label_publisher": "Publisher",
+      "label_year": "Year",
+      "label_language": "Language",
+      "label_genre": "Genre"
+    },
+    "description": {
+      "title": "Description"
+    },
+    "related": {
+      "title": "Related books",
+      "empty": "No related books"
+    }
+  },
+  "auditLogs": {
+    "title": "Audit Logs",
+    "subtitle": "Database activity history",
+    "refresh": "Refresh",
+    "searchPlaceholder": "Search...",
+    "loading": "Loading...",
+    "empty": "No logs found",
+    "filters": {
+      "allActions": "All Actions",
+      "DateFilter": "Date range",
+      "DateMin": "From",
+      "DateMax": "To",
+      "Clear": "Clear",
+      "DateWarning": "Start date must be before end date"
+    },
+    "actions": {
+      "create": "Create",
+      "update": "Update",
+      "delete": "Delete"
+    },
+    "table": {
+      "time": "Time",
+      "action": "Action",
+      "entity": "Entity",
+      "user": "User",
+      "path": "Path",
+      "status": "Status"
+    },
+    "pagination": {
+      "prev": "Prev",
+      "next": "Next",
+      "PageSizeOption": "{size} / page"
+    }
+  }
+}

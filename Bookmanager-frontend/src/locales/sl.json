@@ -1,0 +1,875 @@
+{
+  "brand": "Knjižnica Rudolfovo",
+  "user": {
+    "admin": "Admin"
+  },
+  "nav": {
+    "title": "Navigacija",
+    "home": "Domov",
+    "add": "Dodaj knjige",
+    "books": "Vse knjige",
+    "borrowed": "Moje izposoje",
+    "wishlist": "Wishlist",
+    "changePassword": "Spremeni geslo",
+    "logout": "Odjava",
+    "language": "Jezik",
+    "theme": "Tema",
+    "statistics": "Statistika",
+    "userActions": "Uporabniške akcije",
+    "adminActions": "Admin akcije",
+    "manageCenters": "Urejanje centrov",
+    "addBook": "Dodaj knjigo",
+    "addUser": "Dodaj uporabnika",
+    "manageUsers": "Urejanje uporabnikov",
+    "auditLogs": "Audit Log",
+    "inventory": "Inventura",
+    "priceReview": "Pregled cen",
+    "menu": "Meni",
+    "openMenu": "Odpri meni",
+    "closeMenu": "Zapri meni",
+    "profile": "Profil"
+  },
+  "home": {
+    "title": "Home",
+    "subtitle": "Hiter pregled in bližnjice",
+    "scan": {
+      "title": "Skeniraj ISBN",
+      "text": "Dodaj knjigo preko bar code",
+      "button": "Skeniraj",
+      "explanation": "Funkcija je na voljo samo administratorju."
+    },
+    "search": {
+      "title": "Search",
+      "text": "Najdi knjige po naslovu/ključnih besedah.",
+      "button": "Išči"
+    },
+    "borrow": {
+      "title": "Moja izposoja",
+      "text": "Poglej svoje izposojene knjige.",
+      "button": "Odpri"
+    },
+    "activity": {
+      "title": "Zadnja aktivnost",
+      "none": "Tukaj se bodo prikazali vaša nedavna brskanja."
+    }
+  },
+  "AllBooks": {
+    "success": "Knjiga je bila uspešno test"
+  },
+  "wishlist": {
+    "title": "Nabava knjig",
+    "subtitle": "Zaposleni lahko predlagate knjige za nakup in dodajanje v inventar.",
+    "tabs": {
+      "mine": "Moje",
+      "allAdmin": "Vse (admin)"
+    },
+    "form": {
+      "title": "Predlagaj knjigo",
+      "isbn": "ISBN / ISSN (opcijsko)",
+      "isbnPlaceholder": "978... ali 0378-5955",
+      "isbnAutoSearchHint": "Auto-iskanje se sproži pri ISBN-13; za ISBN-10 in ISSN uporabi Enter ali zapusti polje.",
+      "lookupSearching": "Iščem...",
+      "lookupSuccess": "Knjiga je najdena.",
+      "lookupNotFound": "Knjiga ni najdena. Podatke vnesi ročno.",
+      "priority": "Prioriteta",
+      "price": "Cena (opcijsko)",
+      "pricePlaceholder": "npr. 24.99",
+      "funding": "Vir financiranja",
+      "fundingPlaceholder": "npr. ime projekta",
+      "center": "Center *",
+      "centerPlaceholder": "Izberi center",
+      "bookTitle": "Naslov *",
+      "bookTitlePlaceholder": "Naslov knjige",
+      "author": "Avtor/ji *",
+      "authorPlaceholder": "Avtor",
+      "language": "Jezik",
+      "languagePlaceholder": "ENG / SLO",
+      "issnMeta": "ISSN podrobnosti:",
+      "issnEdit": "Uredi ISSN",
+      "issnModalTitle": "ISSN podrobnosti",
+      "issnModalSubtitle": "Dodaj letnik in številko za serijske publikacije.",
+      "issnVolumeLabel": "Letnik",
+      "issnVolumePlaceholder": "npr. 12",
+      "issnNumberLabel": "Številka",
+      "issnNumberPlaceholder": "npr. 3",
+      "issnModalCancel": "Prekliči",
+      "issnModalSave": "Shrani",
+      "genres": "Žanri (ločeni z vejico)",
+      "genresPlaceholder": "Fantasy, Fiction",
+      "note": "Opomba (zakaj, katera izdaja, link…)",
+      "notePlaceholder": "Priporočena izdaja, link do knjigarne, razlog...",
+      "save": "Shrani",
+      "cancel": "Prekliči",
+      "notify": "Obvesti me, ko bo knjiga dodana v inventar",
+      "submit": "Pošlji predlog",
+      "submitting": "Pošiljam...",
+      "clear": "Počisti"
+    },
+    "priority": {
+      "low": "Nizka",
+      "normal": "Normalna",
+      "high": "Visoka"
+    },
+    "search": "Išči...",
+    "status": {
+      "all": "Vsi statusi",
+      "new": "Novo",
+      "review": "V pregledu",
+      "ordered": "Naročeno",
+      "added": "Dodano v inventar",
+      "rejected": "Zavrnjeno"
+    },
+    "added": "Dodano:",
+    "author": "Avtor",
+    "price": "Cena",
+    "note": "Opomba",
+    "success": {
+      "created": "Predlog je bil uspešno dodan.",
+      "updated": "Predlog je bil uspešno posodobljen."
+    },
+    "edit": "Uredi",
+    "delete": "Izbriši",
+    "empty": "Ni predlogov za nabavo."
+  },
+  "isbn": {
+    "title": "ISBN ali ISSN iskanje",
+    "placeholder": "Skeniraj ali vnesi ISBN/ISSN",
+    "submit": "Pošlji",
+    "status": {
+      "idle": "Čakam...",
+      "searching": "Iščem...",
+      "fetching": "Berem podatke...",
+      "found": "Knjiga najdena 😎",
+      "notfound": "ISBN ni bil najden.",
+      "error": "Naleteli smo na napako."
+    },
+    "results": "Rezultati",
+    "titleLabel": "Naslov",
+    "author": "Avtor/ji",
+    "language": "Jezik",
+    "publisher": "Založnik",
+    "year": "Leto izdaje",
+    "genres": "Žanri",
+    "noResults": "Ni rezultatov.",
+    "adminNote": "Imaš prednost, ker si admin. 😊",
+    "actions": "Ukrepi:",
+    "addToInventory": "Dodaj v inventar",
+    "borrow": "Izposodi",
+    "addToWishlist": "Dodaj na wishlist"
+  },
+  "borrowings": {
+    "title": "Izposoje",
+    "subtitle": "Pregled izposojenih knjig z iskanjem in filtri",
+    "searchLabel": "Iskalno polje:",
+    "searchPlaceholder": "Vnesite ime knjige ali uporabnika",
+    "active": "Aktivne",
+    "overdue": "Zapadle",
+    "returned": "Vrnjene",
+    "borrowed": "Izposojene",
+    "tabs": {
+      "my": "Moje izposoje",
+      "all": "Vse izposoje"
+    },
+    "success": {
+      "returned": "Izbrane knjige so bile vrnjenje.",
+      "extended": "Izbrane knjige so imele podaljšan rok.",
+      "deleted": "Izbrane izposoje so bile izbrisane."
+    },
+    "filters": {
+      "allStatuses": "Vsi statusi",
+      "allTime": "Ves čas",
+      "last7": "Zadnjih 7 dni",
+      "last30": "Zadnjih 30 dni",
+      "thisMonth": "Ta mesec",
+      "custom": "Poljubni razpon",
+      "period": "Obdobje"
+    },
+    "sort": {
+      "newest": "Najnovejše",
+      "oldest": "Najstarejše",
+      "nameAsc": "Po imenu (A–Ž)",
+      "nameDesc": "Po imenu (Ž–A)"
+    },
+    "table": {
+      "book": "Knjiga",
+      "user": "Uporabnik",
+      "borrowedAt": "Datum izposoje",
+      "dueDate": "Rok vrnitve",
+      "status": "Status"
+    },
+    "status": {
+      "active": "Aktivne",
+      "overdue": "Zapadle",
+      "returned": "Vrnjene",
+      "borrowed": "Izposojene"
+    },
+    "actions": {
+      "return": "Vrni",
+      "extend": "Podaljšaj",
+      "delete": "Izbriši"
+    },
+    "selected": "Izbranih:",
+    "results": "{count} zadetkov",
+    "empty": "Ni izposoj glede na izbrane filtre.",
+    "pagination": {
+      "prev": "Nazaj",
+      "next": "Naprej",
+      "page": "Stran",
+      "perPage": "{count} / stran"
+    }
+  },
+  "login": {
+    "title": "Prijava",
+    "subtitle": "Prijavi se v knjižnico",
+    "username": "Uporabniško ime",
+    "usernamePlaceholder": "npr. janez.novak",
+    "password": "Geslo",
+    "passwordPlaceholder": "",
+    "submit": "Prijava",
+    "noAccount": "Še nimate računa?",
+    "register": "Registracija",
+    "errors": {
+      "invalid": "Napačno uporabniško ime ali geslo",
+      "network": "Napaka pri povezavi s strežnikom"
+    }
+  },
+  "register": {
+    "title": "Ustvarite račun",
+    "subtitle": "Ustvari račun za dostop do knjižnice",
+    "username": "Uporabniško ime",
+    "usernamePlaceholder": "npr. janez.novak",
+    "email": "Email",
+    "emailPlaceholder": "Vnesite email",
+    "centerLegend": "Legenda:",
+    "center": "Center",
+    "centerPlaceholder": "— izberi center —",
+    "password": "Geslo",
+    "passwordPlaceholder": "Vnesite geslo",
+    "confirmPassword": "Potrdite geslo",
+    "confirmPasswordPlaceholder": "Ponovite geslo",
+    "submit": "Registracija",
+    "errors": {
+      "required": "Vsa polja so obvezna",
+      "passwordMismatch": "Gesli se ne ujemata",
+      "exists": "Uporabnik že obstaja",
+      "createFailed": "Napaka pri ustvarjanju uporabnika"
+    },
+    "success": {
+      "created": "Uporabnik uspešno ustvarjen!"
+    }
+  },
+  "signup": {
+    "title": "Registracija zaposlenih",
+    "subtitle": "Ustvari račun preko QR povezave",
+    "username": "Uporabniško ime",
+    "usernamePlaceholder": "npr. janez.novak",
+    "email": "Email",
+    "emailPlaceholder": "Vnesite email",
+    "center": "Center",
+    "centerPlaceholder": "— izberi center —",
+    "centers": {
+      "cent": "CENT",
+      "cedig": "CEDIG",
+      "cekrog": "CEKROG",
+      "cetip": "CETIP",
+      "ceq": "CEQ",
+      "sharedServices": "Skupne službe"
+    },
+    "password": "Geslo",
+    "passwordPlaceholder": "Vnesite geslo",
+    "confirmPassword": "Potrdite geslo",
+    "confirmPasswordPlaceholder": "Ponovite geslo",
+    "submit": "Ustvari račun",
+    "submitting": "Pošiljam...",
+    "errors": {
+      "required": "Vsa polja so obvezna",
+      "passwordMismatch": "Gesli se ne ujemata",
+      "createFailed": "Napaka pri ustvarjanju računa"
+    },
+    "success": {
+      "created": "Račun uspešno ustvarjen. Preusmerjam na prijavo..."
+    }
+  },
+  "changePassword": {
+    "title": "Spremeni geslo",
+    "subtitle": "Posodobi geslo svojega računa.",
+    "currentPassword": "Trenutno geslo",
+    "newPassword": "Novo geslo",
+    "confirmPassword": "Potrdi novo geslo",
+    "submit": "Shrani geslo",
+    "saving": "Shranjujem...",
+    "errors": {
+      "required": "Vsa polja so obvezna.",
+      "mismatch": "Novo geslo in potrditev se ne ujemata.",
+      "minLength": "Geslo mora vsebovati najmanj 8 znakov.",
+      "updateFailed": "Posodobitev gesla ni uspela."
+    },
+    "success": {
+      "updated": "Geslo je bilo uspešno posodobljeno."
+    }
+  },
+  "books": {
+    "title": "Vse knjige",
+    "subtitle": "Pregled vseh knjig v knjižnici",
+    "addBook": "Dodaj knjigo",
+    "searchPlaceholder": "Išči po naslovu, avtorju ali ISBN",
+    "allGenres": "Vsi žanri",
+    "allCenters": "Vsi centri",
+    "allCategories": "Vse kategorije",
+    "allLanguages": "Vsi jeziki",
+    "availabilityFilter": {
+      "all": "Vsa razpoložljivost",
+      "availableOnly": "Samo na voljo",
+      "borrowedOnly": "Samo izposojene"
+    },
+    "pageSizeOption": "{size} / stran",
+    "categoryNames": {
+      "1_00_00": "Naravoslovje",
+      "2_00_00": "Tehnika",
+      "4_00_00": "Biotehnika",
+      "5_00_00": "Družboslovje",
+      "6_00_00": "Humanistika",
+      "7_00_00": "Interdisciplinarne raziskave",
+      "10_00_00": "Serijske publikacije",
+      "9_00_00": "Drugo"
+    },
+    "orderedNotAvailable": "Naročeno",
+    "loading": "Nalagam knjige…",
+    "error": "Napaka",
+    "available": "Na voljo",
+    "unavailable": "Izposojena",
+    "view": "Poglej",
+    "borrow": "Izposodi",
+    "notAvailableTooltip": "Knjiga ni na voljo",
+    "borrowTooltip": "Izposodi knjigo",
+    "noBooks": "Ni knjig za prikaz.",
+    "borrowModal": {
+      "title": "Izposoja knjige",
+      "forSelf": "Izposodi meni",
+      "forUser": "Izposodi uporabniku",
+      "searchUsersPlaceholder": "Išči po imenu, emailu ali centru",
+      "selectUser": "-- izberi uporabnika --",
+      "loadingUsers": "Nalagam uporabnike...",
+      "noUsers": "Ni uporabnikov za prikaz.",
+      "cancel": "Prekliči",
+      "confirm": "Potrdi izposojo"
+    },
+    "messages": {
+      "noCopies": "Ni prostih kopij.",
+      "borrowError": "Napaka pri izposoji knjige.",
+      "missingUserId": "Manjka userId (prijava)."
+    },
+    "success": {
+      "borrowed": "Knjiga \"{title}\" je bila uspešno izposojena.",
+      "borrowedForUser": "Knjiga \"{title}\" je bila uspešno izposojena za uporabnika {username}."
+    }
+  },
+  "addbook": {
+    "title": "Dodaj novo knjigo",
+    "isbnNotFound": "Knjiga z danim ISBN ne obstaja. Vnesi podatke spodaj.",
+    "success": "Knjiga je bila uspešno dodana",
+    "isbn": "ISBN:",
+    "isbnPlaceholder": "ISBN",
+    "titleLabel": "Naslov:",
+    "titlePlaceholder": "Naslov knjige",
+    "author": "Avtor/ji:",
+    "authorPlaceholder": "npr. J.R.R. Tolkien",
+    "publisher": "Založnik:",
+    "year": "Leto izdaje:",
+    "price": "Cena (EUR):",
+    "pricePlaceholder": "npr. 24.99",
+    "coverUpload": "Naslovnica (upload):",
+    "coverUploadHint": "JPG/PNG/WEBP, max 10 MB",
+    "coverUrl": "URL slike naslovnice:",
+    "coverUrlPlaceholder": "https://primer.si/naslovnica.jpg",
+    "language": "Jezik:",
+    "languagePlaceholder": "ENG",
+    "location": "Lokacija:",
+    "subcategory": "Podkategorija:",
+    "subcategoryPlaceholder": "-- izberi podkategorijo --",
+    "genres": "Žanri:",
+    "genresPlaceholder": "Fantasy, Fiction",
+    "issnMeta": "ISSN podrobnosti:",
+    "issnEdit": "Uredi ISSN",
+    "issnModalTitle": "ISSN podrobnosti",
+    "issnModalSubtitle": "Dodaj letnik in številko za serijske publikacije.",
+    "issnVolumeLabel": "Letnik",
+    "issnVolumePlaceholder": "npr. 12",
+    "issnNumberLabel": "Številka",
+    "issnNumberPlaceholder": "npr. 3",
+    "issnModalCancel": "Prekliči",
+    "issnModalSave": "Shrani",
+    "scanLookup": "Dodaj s skeniranjem ISBN",
+    "save": "Shrani knjigo",
+    "cancel": "Ponastavi"
+  },
+  "statistics": {
+    "title": "Statistika knjižnice",
+    "current": "Trenutno",
+    "booksLabel": "knjig",
+    "progress": {
+      "goalReached": "Cilj dosežen",
+      "toGoal": "{count} do cilja",
+      "done": "3500 doseženo. Čas za novo polico.",
+      "opening": "Šele odpiramo škatle...",
+      "filling": "Polica se že lepo polni.",
+      "space": "Knjižničarka že išče več prostora.",
+      "almost": "Skoraj rabimo novo nadstropje."
+    },
+    "centers": {
+      "title": "Dodeljene po centrih",
+      "summaryTitle": "Skupaj izvodov",
+      "summaryNote": "Vsota vseh kopij po centrih"
+    },
+    "topSubcategories": {
+      "title": "Top 10 podkategorij po novih izvodih",
+      "note": "Filtri leta/obdobja veljajo enako kot za časovna grafa.",
+      "metaTotalTop10": "Skupaj v top 10",
+      "metaCount": "Podkategorij",
+      "xAxisTitle": "Št. novih izvodov",
+      "tooltipSuffix": "novih izvodov",
+      "series": {
+        "addedCopies": "Dodani izvodi"
+      }
+    },
+    "growth": {
+      "title": "Rast izvodov skozi čas",
+      "yearAll": "Vsa leta",
+      "range90d": "Zadnjih 90 dni",
+      "range12m": "Zadnjih 12 mesecev",
+      "range24m": "Zadnjih 24 mesecev",
+      "rangeAll": "Vse",
+      "bucketMonth": "Po mesecih",
+      "bucketDay": "Po dnevih",
+      "refresh": "Osveži",
+      "loading": "Nalagam...",
+      "metaTotalNow": "Skupaj trenutno",
+      "metaAddedRange": "Dodano v prikazanem obdobju",
+      "series": {
+        "total": "Skupaj",
+        "added": "Dodano"
+      },
+      "yaxis": {
+        "total": "Skupaj",
+        "added": "Dodano"
+      }
+    },
+    "growthPercent": {
+      "title": "Rast izvodov skozi čas (%)",
+      "note": "Isti potek kot \"Dodano\", prikazan v % glede na skupno stanje v obdobju.",
+      "metaLastPeriod": "Zadnje obdobje",
+      "metaTotalNow": "Skupaj trenutno",
+      "series": {
+        "addedPercent": "Dodano (%)"
+      },
+      "yaxis": {
+        "addedPercent": "Dodano (%)"
+      }
+    },
+    "errors": {
+      "growthLoad": "Napaka pri nalaganju grafa.",
+      "subcategoriesLoad": "Napaka pri nalaganju podkategorij."
+    }
+  },
+  "bookdetails": {
+    "loading": "Nalagam…",
+    "error": "Prišlo je do napake",
+    "back": "Nazaj",
+    "status": {
+      "available": "Na voljo",
+      "borrowed": "Izposojena",
+      "unavailable": "Ni na voljo",
+      "label": "Status:",
+      "available_long": "Na voljo za izposojo",
+      "borrowed_long": "Izposojena —",
+      "borrowed_due": "predviden rok vrnitve:",
+      "borrowed_unknown": "rok vrnitve: ni znan",
+      "unavailable_long": "Trenutno ni na voljo (v obdelavi / izgubljena / izločena)"
+    },
+    "actions": {
+      "borrow": "Izposodi",
+      "notify": "Obvesti ob vrnitvi",
+      "edit": "Uredi knjigo",
+      "delete": "Izbriši knjigo",
+      "delete_confirm": "Ali želiš izbrisati to knjigo? To dejanje ni mogoče razveljaviti.",
+      "delete_success": "Knjiga je bila uspešno izbrisana.",
+      "delete_error": "Brisanje knjige ni uspelo."
+    },
+    "cover": {
+      "zoom_label": "Povečaj naslovnico",
+      "zoom_hint": "Klikni za povečavo",
+      "zoom_close": "Zapri",
+      "zoom_alt": "Povečana naslovnica:"
+    },
+    "inventory": {
+      "title": "Inventar",
+      "number": "Inventarna št.",
+      "location": "Kategorijska številka",
+      "copies": "Izvodi",
+      "free": "Prosti izvodi",
+      "condition": "Stanje",
+      "note": "Opomba"
+    },
+    "details": {
+      "title": "Podrobnosti",
+      "label_title": "Naslov",
+      "label_author": "Avtor",
+      "label_isbn": "ISBN",
+      "label_issn_number": "Številka",
+      "label_issn_issue": "Izdaja",
+      "label_publisher": "Založba",
+      "label_year": "Leto",
+      "label_language": "Jezik",
+      "label_genre": "Žanr"
+    },
+    "description": {
+      "title": "Opis"
+    },
+    "related": {
+      "title": "Sorodne knjige",
+      "empty": "Ni sorodnih knjig"
+    }
+  },
+  "adminCenters": {
+    "title": "Urejanje centrov",
+    "subtitle": "Upravljaj centre, uporabnike in skupne stroške.",
+    "loading": "Nalagam centre...",
+    "empty": "Ni centrov.",
+    "newCenterPlaceholder": "Vnesi ime novega centra",
+    "currency": "{value} EUR",
+    "actions": {
+      "refresh": "Osveži",
+      "addCenter": "Dodaj center",
+      "save": "Shrani",
+      "cancel": "Prekliči",
+      "edit": "Uredi",
+      "delete": "Izbriši"
+    },
+    "columns": {
+      "id": "ID",
+      "center": "Center",
+      "users": "Uporabniki",
+      "booksCopies": "Knjige in izvodi",
+      "price": "Cena",
+      "actions": "Akcije"
+    },
+    "confirm": {
+      "deletePrompt": "Ali želiš izbrisati center \"{name}\"?",
+      "updatePrompt": "Sprememba centra bo posodobila {users} uporabnikov in {books} knjig. Nadaljujem?"
+    },
+    "errors": {
+      "loadFailed": "Napaka pri nalaganju centrov.",
+      "enterName": "Vnesi ime centra.",
+      "createFailed": "Dodajanje centra ni uspelo.",
+      "nameEmpty": "Ime centra ne sme biti prazno.",
+      "notFound": "Center ni najden.",
+      "nameSame": "Novo ime je enako obstoječemu.",
+      "updateFailed": "Posodobitev centra ni uspela.",
+      "deleteFailed": "Brisanje centra ni uspelo."
+    },
+    "success": {
+      "created": "Center \"{name}\" je uspešno dodan.",
+      "updated": "Center je uspešno posodobljen.",
+      "deleted": "Center \"{name}\" je uspešno izbrisan."
+    }
+  },
+  "adminUsers": {
+    "title": "Urejanje uporabnikov",
+    "subtitle": "Pregled in upravljanje uporabniških računov.",
+    "loading": "Nalagam uporabnike...",
+    "empty": "Ni uporabnikov.",
+    "defaultUserRole": "Uporabnik",
+    "cannotDeleteSelf": "Svojega računa ne moreš izbrisati.",
+    "actions": {
+      "refresh": "Osveži",
+      "changePassword": "Spremeni geslo",
+      "delete": "Izbriši",
+      "cancel": "Prekliči",
+      "savePassword": "Shrani geslo",
+      "saving": "Shranjujem..."
+    },
+    "columns": {
+      "id": "ID",
+      "username": "Uporabniško ime",
+      "email": "E-pošta",
+      "role": "Vloga",
+      "center": "Center",
+      "actions": "Akcije"
+    },
+    "modal": {
+      "title": "Spremeni geslo",
+      "user": "Uporabnik",
+      "newPassword": "Novo geslo",
+      "confirmPassword": "Potrdi geslo"
+    },
+    "confirm": {
+      "delete": "Ali želiš izbrisati uporabnika \"{username}\"?"
+    },
+    "errors": {
+      "loadFailed": "Napaka pri nalaganju uporabnikov.",
+      "bothPasswords": "Izpolni obe polji za geslo.",
+      "passwordMismatch": "Gesli se ne ujemata.",
+      "passwordMin": "Geslo mora imeti vsaj 6 znakov.",
+      "updateFailed": "Posodobitev gesla ni uspela.",
+      "deleteFailed": "Brisanje uporabnika ni uspelo."
+    },
+    "success": {
+      "passwordUpdated": "Geslo za uporabnika \"{username}\" je uspešno posodobljeno.",
+      "deleted": "Uporabnik \"{username}\" je uspešno izbrisan."
+    }
+  },
+  "editBook": {
+    "title": "Uredi knjigo",
+    "subtitle": "Posodobi podatke o knjigi in kategorijo.",
+    "loading": "Nalagam podatke...",
+    "fields": {
+      "title": "Naslov",
+      "author": "Avtor",
+      "publisher": "Založba",
+      "year": "Leto izdaje",
+      "price": "Cena",
+      "coverUpload": "Naslovnica",
+      "coverHint": "Izberi novo sliko, če želiš zamenjati naslovnico.",
+      "coverPreviewAlt": "Predogled naslovnice",
+      "language": "Jezik",
+      "categoryMain": "Glavna kategorija",
+      "subcategory": "Podkategorija",
+      "subcategoryPlaceholder": "Izberi podkategorijo",
+      "subOptionsCount": "Možnosti podkategorij: {count}",
+      "genres": "Žanri",
+      "genresPlaceholder": "žanri, ločeni z vejico"
+    },
+    "actions": {
+      "save": "Shrani",
+      "cancel": "Prekliči"
+    },
+    "success": {
+      "updated": "Knjiga je uspešno posodobljena.",
+      "updatedCoverFailed": "Knjiga je posodobljena, vendar prenos naslovnice ni uspel."
+    },
+    "errors": {
+      "loadFailed": "Napaka pri nalaganju knjige.",
+      "missingToken": "Manjka prijavni četon.",
+      "invalidPrice": "Cena mora biti veljavna številka.",
+      "saveFailed": "Shranjevanje ni uspelo.",
+      "saveFailedWithReason": "Shranjevanje ni uspelo: {reason}"
+    }
+  },
+  "inventory": {
+    "title": "Inventura",
+    "subtitle": "Pregled vseh kopij (inventarnih enot).",
+    "loading": "Nalagam inventuro...",
+    "empty": "Ni zadetkov glede na filtre.",
+    "total": {
+      "all": "Skupaj: {total}",
+      "filtered": "Filtrirano: {filtered} / {total}"
+    },
+    "common": {
+      "yes": "Da",
+      "no": "Ne"
+    },
+    "actions": {
+      "refresh": "Osveži",
+      "edit": "Uredi",
+      "close": "Zapri",
+      "deleteCopy": "Izbriši kopijo",
+      "save": "Shrani",
+      "saving": "Shranjujem..."
+    },
+    "filters": {
+      "search": "Iskanje",
+      "searchPlaceholder": "Inventarna št., naslov, avtor, ISBN...",
+      "availability": "Na voljo",
+      "availabilityAll": "Vse",
+      "availabilityOnlyAvailable": "Samo na voljo",
+      "availabilityOnlyBorrowed": "Samo izposojeno",
+      "location": "Lokacija",
+      "locationPlaceholder": "npr. Polica A3",
+      "sort": "Razvrsti"
+    },
+    "sort": {
+      "invAsc": "Inventarna ?",
+      "invDesc": "Inventarna ?",
+      "titleAsc": "Naslov ?",
+      "titleDesc": "Naslov ?",
+      "availableFirst": "Najprej na voljo",
+      "borrowedFirst": "Najprej izposojene"
+    },
+    "chips": {
+      "availability": "Na voljo",
+      "location": "Lokacija",
+      "search": "Iskanje"
+    },
+    "aria": {
+      "clearAvailability": "Počisti filter na voljo",
+      "clearLocation": "Počisti filter lokacije",
+      "clearSearch": "Počisti iskalni filter"
+    },
+    "table": {
+      "inventoryNumber": "Inventarna",
+      "book": "Knjiga",
+      "volume": "Letnik",
+      "issue": "številka",
+      "order": "Naročilo",
+      "location": "Lokacija",
+      "condition": "Stanje",
+      "status": "Status",
+      "idPrefix": "ID",
+      "unknownBook": "Neznan naslov",
+      "unknownAuthor": "Neznan avtor",
+      "borrowedCenter": "Center: {center}",
+      "borrowedByLabel": "Izposodil/a"
+    },
+    "status": {
+      "available": "Na voljo",
+      "borrowed": "Izposojeno"
+    },
+    "pagination": {
+      "prev": "Prejšnja stran",
+      "next": "Naslednja stran",
+      "page": "Stran {page} / {totalPages}",
+      "perPage": "{count} / stran"
+    },
+    "modal": {
+      "title": "Uredi kopijo",
+      "inventoryNumber": "Inventarna številka",
+      "inventoryNumberPlaceholder": "npr. 000123"
+    },
+    "confirm": {
+      "deleteCopy": "Izbrišem kopijo ({label})?\n\nTo dejanje ni povratno."
+    },
+    "success": {
+      "copyDeleted": "Kopija ({label}) je bila uspešno izbrisana.",
+      "copyDeletedAndBookRemoved": "Kopija ({label}) je bila izbrisana. Knjiga je bila odstranjena, ker ni več kopij."
+    },
+    "errors": {
+      "loadFailed": "Napaka pri nalaganju inventure.",
+      "saveFailed": "Shranjevanje ni uspelo.",
+      "deleteFailed": "Brisanje ni uspelo."
+    }
+  },
+  "priceReview": {
+    "title": "Pregled cen",
+    "subtitle": "Pregled stroškov po centrih",
+    "loading": "Nalagam...",
+    "currency": "EUR",
+    "actions": {
+      "refresh": "Osveži",
+      "exportExcel": "Export Excel",
+      "resetPrices": "Reset cen"
+    },
+    "table": {
+      "center": "Center",
+      "users": "Uporabniki",
+      "price": "Cena",
+      "total": "Skupaj"
+    },
+    "history": {
+      "title": "Zgodovina cen",
+      "subtitle": "Pregled cen po letih (wishlist + dodano v inventar)"
+    },
+    "filters": {
+      "allYears": "Vsa leta",
+      "yearSort": "Leto: {order}",
+      "newest": "Najnovejše",
+      "oldest": "Najstarejše"
+    },
+    "summary": {
+      "year": "Leto",
+      "items": "Postavke",
+      "total": "Skupaj"
+    },
+    "historyTable": {
+      "year": "Leto",
+      "title": "Naslov",
+      "order": "Naročilo",
+      "author": "Avtor",
+      "price": "Cena",
+      "user": "Uporabnik",
+      "source": "Vir",
+      "reviewedBy": "Pregledal",
+      "recordedAt": "Vpisano",
+      "empty": "Ni podatkov."
+    },
+    "source": {
+      "wishlist": "Wishlist",
+      "isbn": "ISBN vnos",
+      "manual": "Ročno dodan",
+      "edited": "Posodobljeno"
+    },
+    "confirm": {
+      "resetPrices": "Ali res želiš ponastaviti vse cene na 0 EUR?\n\nTo dejanje ni mogoče razveljaviti."
+    },
+    "success": {
+      "pricesReset": "Vse cene so bile ponastavljene."
+    },
+    "errors": {
+      "loadPrices": "Napaka pri nalaganju cen.",
+      "loadHistory": "Napaka pri nalaganju zgodovine.",
+      "resetFailed": "Reset cen ni uspel.",
+      "exportFailed": "Export ni uspel."
+    },
+    "auditLogs": {
+      "title": "Revizijski dnevniki",
+      "subtitle": "Zgodovina aktivnosti v podatkovni bazi",
+      "refresh": "Osveži",
+      "searchPlaceholder": "Išči...",
+      "loading": "Nalaganje...",
+      "empty": "Ni najdenih zapisov",
+      "filters": {
+        "allActions": "Vsa dejanja"
+      },
+      "actions": {
+        "create": "Ustvari",
+        "update": "Posodobi",
+        "delete": "Izbriši"
+      },
+      "table": {
+        "time": "Čas",
+        "action": "Dejanje",
+        "entity": "Entiteta",
+        "user": "Uporabnik",
+        "path": "Pot",
+        "status": "Status"
+      },
+      "pagination": {
+        "prev": "Nazaj",
+        "next": "Naprej"
+      }
+    }
+  },
+  "auditLogs": {
+    "title": "Revizijski dnevniki",
+    "subtitle": "Zgodovina aktivnosti v podatkovni bazi",
+    "refresh": "Osveži",
+    "searchPlaceholder": "Išči...",
+    "loading": "Nalaganje...",
+    "empty": "Ni najdenih zapisov",
+    "filters": {
+      "allActions": "Vsa dejanja",
+      "DateFilter": "Obdobje",
+      "DateMin": "Od",
+      "DateMax": "Do",
+      "Clear": "Poćisti",
+      "DateWarning": "Začetni datum mora biti pred končnim datumom"
+    },
+    "actions": {
+      "create": "Ustvari",
+      "update": "Posodobi",
+      "delete": "Izbriši"
+    },
+    "table": {
+      "time": "Čas",
+      "action": "Dejanje",
+      "entity": "Entiteta",
+      "user": "Uporabnik",
+      "path": "Pot",
+      "status": "Status"
+    },
+    "pagination": {
+      "prev": "Nazaj",
+      "next": "Naprej",
+      "PageSizeOption": "{size} / stran"
+    }
+  }
+}
